@@ -57,7 +57,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass> au.gov.vic.delwp.gwc_to_arcgis.gwc_arcgis</mainClass>
+                            <mainClass> au.gov.vic.delwp.gwc_to_slippy.gwc_slippy</mainClass>
                         </manifest>
                     </archive>
                     <!-- <descriptorRefs>

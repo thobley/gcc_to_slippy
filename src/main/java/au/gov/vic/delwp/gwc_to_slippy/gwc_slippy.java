@@ -141,7 +141,7 @@ public class gwc_slippy {
             //String foldername = "L" + String.format("%2s", level).replace(" ", "0");
             int totalRows = getTotalLevelRows(proj, level, px);
             //Create arcGIS level folder
-            File lvFolder = new File(levelsFolder.getPath() + File.separator + levelsFolder);
+            File lvFolder = new File(levelsFolder.getPath() + File.separator + level);
             lvFolder.mkdir();
             String[] folders = getFolders(gwccache + File.separator + gwclevel);
             System.out.println("Folders in " + gwclevel + ": " + folders.length);
@@ -180,7 +180,6 @@ public class gwc_slippy {
                     File dest = new File(lvFolder.getPath() + File.separator + col + File.separator + row +"." + (format.equals("png8") ? "png" : format));
                     File src = new File(gwccache + File.separator + gwclevel + File.separator + folder + File.separator + file);
                     try {
-
                         FileUtils.copyFile(src, dest);
                         //copyFile(src, dest);
 
